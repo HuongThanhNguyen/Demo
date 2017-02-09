@@ -25,7 +25,13 @@ public abstract class Pen {
 		this.type = type;
 	}
 
-	abstract void displayPrice();
+	public Pen(int price, String type) {
+		this.price = price;
+		this.type = type;
+	}
 
-	abstract void displayType();
+	abstract void displayPrice(int price);
+
+	abstract void displayType(String type);
+
 }

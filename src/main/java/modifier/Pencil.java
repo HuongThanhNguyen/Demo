@@ -6,15 +6,21 @@ package modifier;
 
 public class Pencil extends Pen {
 
-	@Override
-	void displayPrice() {
-		setPrice(2000);
-		System.out.println("Price: " + getPrice());
+	public Pencil(int price, String type) {
+		super(price, type);
+		this.price = price;
+		this.type = type;
 	}
 
 	@Override
-	void displayType() {
-		setType("Pencil");
+	void displayPrice(int price) {
+		setPrice(price);
+		System.out.println("int Price: " + getPrice());
+	}
+
+	@Override
+	void displayType(String type) {
+		setType(type);
 		System.out.println("name: " + getType());
 	}
 
