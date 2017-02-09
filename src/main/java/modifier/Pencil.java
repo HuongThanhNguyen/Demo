@@ -2,20 +2,20 @@
  * class Pencil extent Pen Override 2 method cua Pen va setup gia tri price va type
  */
 
-package AbstrackAndStaticAndAnnotation;
+package modifier;
 
 public class Pencil extends Pen {
 
 	@Override
-	void Price() {
-		setPrice(1000);
-		System.out.println(getPrice());
+	void displayPrice() {
+		setPrice(2000);
+		System.out.println("Price: " + getPrice());
 	}
 
 	@Override
-	void Type() {
+	void displayType() {
 		setType("Pencil");
-		System.out.println(getType());
-
+		System.out.println("name: " + getType());
 	}
+
 }

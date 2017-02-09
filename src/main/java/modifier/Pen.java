@@ -3,7 +3,7 @@
  * co 2 abstrack Price va Type
  */
 
-package AbstrackAndStaticAndAnnotation;
+package modifier;
 
 public abstract class Pen {
 	public String type;
@@ -25,7 +25,7 @@ public abstract class Pen {
 		this.type = type;
 	}
 
-	abstract void Price();
+	abstract void displayPrice();
 
-	abstract void Type();
+	abstract void displayType();
 }

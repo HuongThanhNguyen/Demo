@@ -5,13 +5,13 @@
  * Class Main chua ham main chuong trinh chinh goi ham va hien thi.
  */
 
-package AbstrackAndStaticAndAnnotation;
+package modifier;
 
 public class Main {
 	public static void main(String args[]) {
 		Pencil pc = new Pencil();
-		pc.Type();
-		pc.Price();
+		pc.displayType();
+		pc.displayPrice();
 
 	}
 }

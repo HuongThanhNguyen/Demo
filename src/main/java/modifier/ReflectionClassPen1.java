@@ -2,14 +2,14 @@
  * sử dụng reflaction để biết những thông tin của class Pen
  */
 
-package AbstrackAndStaticAndAnnotation;
+package modifier;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
-public class ReflactionClassPen1 {
+public class ReflectionClassPen1 {
 	public static void main(String args[]) {
 		Class<Pen> c = Pen.class;
 		try {
