@@ -1,3 +1,4 @@
+package operation;
 /**
  * Cho nhập vào một chuỗi ký tự S chỉ bao gồm [a-z]
  * tìm  chuỗi ký tự đầu tiên chỉ bao gồm các ký tự không bị lặp lại liên tiêls

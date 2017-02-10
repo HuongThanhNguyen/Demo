@@ -7,7 +7,7 @@
  * con nested class thi khong
  */
 
-package objectAndClass;
+package objectandclass;
 
 public class DisplayInformationStudent extends Student {
 	// tao 1 doi tuong st cua Student

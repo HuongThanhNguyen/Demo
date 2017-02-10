@@ -3,7 +3,7 @@
  * co 2 constructor: constructor mac dinh va constructor chua tham so
  */
 
-package objectAndClass;
+package objectandclass;
 
 public class Student {
 	private String nameStudent;

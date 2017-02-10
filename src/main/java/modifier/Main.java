@@ -22,7 +22,7 @@ public class Main {
 
 	}
 
-	//cung ten method nhung khac parameter
+	//cung ten method nhung khac parameter thi dc goi la overload
 	void display(int price1, int price2) {
 		System.out.print(" tong tien là: " + (price1 + price2));
 	}

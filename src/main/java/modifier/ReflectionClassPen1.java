@@ -47,8 +47,7 @@ public class ReflectionClassPen1 {
 
 			System.out.println("DeclaredField Fields are: ");
 			for (Field oneField : fields1) {
-				Field field = c.getField(oneField.getName());
-				String fieldname = field.getName();
+				String fieldname = oneField.getName();
 				System.out.println("Fieldname is: " + fieldname);
 			}
 
