@@ -1,6 +1,6 @@
 package myexception;
 
-public class MyException extends Exception {
+public class MyException extends ArithmeticException {
 		
 @Override
 public String toString(){

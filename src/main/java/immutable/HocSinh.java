@@ -7,10 +7,10 @@ public HocSinh(String nameHS, int ageHS){
 	this.name=nameHS;
 	this.age=ageHS;
 }
-public String getName() {
+public final String getName() {
 	return name;
 }
-public int getAge() {
+public final int getAge() {
 	return age;
 }
 }
