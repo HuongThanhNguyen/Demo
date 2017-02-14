@@ -1,9 +1,6 @@
 package mapandcolection;
 
-import java.awt.List;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -14,9 +11,11 @@ import java.util.Scanner;
  * vi du: chu ha 2 lan 
  * chu noi 2 lan
  */
+
 public class Example {
+	static Scanner sc = new Scanner(System.in);
+
 	public static void main(String args[]) {
-		Scanner sc = new Scanner(System.in);
 		System.out.println("Moi ban nhap chuoi can xac dinh so lan xuat hien cua cac chu co trong chuoi: ");
 		String s = sc.nextLine();
 		String[] s1 = s.split(" ");
@@ -24,7 +23,7 @@ public class Example {
 		for (String x : s1) {
 			String s2 = x.toLowerCase();
 			if (map.containsKey(s2)) {
-				map.put(s2, map.get(x) + 1);
+				map.put(s2, map.get(s2) + 1);
 			} else {
 				map.put(s2, 1);
 			}
