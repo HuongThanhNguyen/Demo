@@ -1,10 +1,11 @@
 package iojava;
 
 public class NhanVien implements Comparable<NhanVien> {
-	String maNV;
-	String ten;
-	int tuoi;
-	float luong;
+	private String maNV;
+	private String ten;
+	private int tuoi;
+	private float luong;
+	static int value;
 
 	public void setMaNV(String maNV) {
 		this.maNV = maNV;
@@ -53,13 +54,19 @@ public class NhanVien implements Comparable<NhanVien> {
 	}
 
 	public int compareTo(NhanVien arg0) {
-		int value=this.tuoi-arg0.tuoi;
-		
+		if(arg0.getTen()==null&&this.ten==null){
+			return 0;
+		}
+		if(arg0.getTen()==null){
+			return 1;
+		}
+		if(this.ten==null){
+			return -1;
+		}
 		try {
-			value = (this.ten).compareTo(arg0.ten);
-			
-		} catch (Exception e) {
-			System.out.println("Loi: "+e);
+			value = this.ten.compareTo(arg0.getTen());
+		} catch (NullPointerException e) {
+			System.out.println("Loi: " + e);
 		}
 		return value;
 	}

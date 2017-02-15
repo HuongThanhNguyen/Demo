@@ -14,7 +14,7 @@ public class NhanVienComparator implements Comparator<NhanVien> {
 		if (o2 == null) {
 			return 1;
 		}
-		int value = o1.tuoi - o2.tuoi;
+		int value = o1.getTuoi() - o2.getTuoi();
 		if (value != 0) {
 			return value;
 		}
