@@ -1,13 +1,13 @@
 package immutable;
 
-public final class HocSinh {
-private String name;
-private int age;
+public class HocSinh {
+private final String name;
+private final int age;
 public HocSinh(String nameHS, int ageHS){
 	this.name=nameHS;
 	this.age=ageHS;
 }
-public final String getName() {
+public String getName() {
 	return name;
 }
 public final int getAge() {

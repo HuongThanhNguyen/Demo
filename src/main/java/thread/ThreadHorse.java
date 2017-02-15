@@ -3,6 +3,7 @@ package thread;
 import java.util.Random;
 
 public class ThreadHorse implements Runnable {
+	final int tongS=100;
 	private Random rd = new Random();
 	private String nameHorse;
 	private Thread t;
@@ -14,20 +15,21 @@ public class ThreadHorse implements Runnable {
 	public void run() {
 		int tong = 0;
 		int dem = 0;
-		for (;;) {
-			int i = rd.nextInt(10) + 1;
-
-			if (tong == 100) {
-				System.out.println(nameHorse + " ve dich voi " + dem + " buoc chay");
-				break;
-			}
-			if (tong > 100) {
+		while(true) {
+			int i = rd.nextInt(10) + 1;					
+			if (tong < tongS) {
 				dem++;
-				tong = tong - 100;
-			}
-			if (tong < 100) {
-				dem++;
-				tong = tong + i;
+				tong += i;
+				System.out.println(nameHorse+ ": "+tong);
+				if (tong > tongS) {
+					dem++;
+					tong -=tongS;
+					System.out.println(nameHorse+ ": "+tong);
+				}
+				if (tong == tongS) {
+					System.out.println(nameHorse + " ve dich voi " + dem + " buoc chay");
+					break;
+				}	
 			}
 			try {
 				Thread.sleep(500);
