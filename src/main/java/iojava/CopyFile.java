@@ -14,6 +14,7 @@ public class CopyFile {
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
+		NhanVien nv=new NhanVien();
 		System.out.println("----- copy file (mac dinh luu o D:/)-----");
 		System.out.println("Nhap ten file nguon: ");
 		String s1 = sc.nextLine();
@@ -28,7 +29,7 @@ public class CopyFile {
 			bf = new BufferedReader(fr);
 			String data;
 			while ((data = bf.readLine()) != null) {
-				pw.println(data);
+				pw.printf(data,nv);
 			}
 			System.out.println("copy file thanh cong");
 			pw.flush();

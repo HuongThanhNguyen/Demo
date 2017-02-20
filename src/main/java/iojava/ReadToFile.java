@@ -23,6 +23,7 @@ public class ReadToFile {
 			while ((data = bf.readLine()) != null) {
 				System.out.println(data);
 			}
+			fr.close();
 		} catch (FileNotFoundException e) {
 			System.err.println("khong tim thay file: " + e);
 		} catch (IOException e) {
