@@ -34,9 +34,9 @@ public class CopyFile {
 			pw.flush();
 			pw.close();
 		} catch (FileNotFoundException e) {
-			System.out.println("File khong ton tai: " + e);
+			System.err.println("File khong ton tai: " + e);
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.err.println("loi: "+e);
 		}
 	}
 }

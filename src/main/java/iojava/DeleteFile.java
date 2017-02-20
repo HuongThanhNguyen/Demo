@@ -12,13 +12,13 @@ public class DeleteFile {
 		String s = sc.nextLine();
 		File file = new File("D:/"+s);
 		if (file.exists() == false) {
-			System.out.println(file.getName() + " khong ton tai");
+			System.err.println(file.getName() + " khong ton tai");
 		} else {
 
 			if (file.delete()) {
 				System.out.println(file.getName() + " xoa thanh cong");
 			} else {
-				System.out.println(file.getName() + " xoa khong thanh cong");
+				System.err.println(file.getName() + " xoa khong thanh cong");
 			}
 		}
 	}

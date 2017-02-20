@@ -17,7 +17,7 @@ public class RenameFile {
 		File file = new File("D:/"+s1);
 		File file2 = new File("D:/"+s2);
 		if (file.exists() == false) {
-			System.out.println(file.getName() + " khong ton tai");
+			System.err.println(file.getName() + " khong ton tai");
 		}
 		if (file.renameTo(file2)) {
 			System.out.println("thay doi ten thanh cong");

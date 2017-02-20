@@ -24,9 +24,9 @@ public class ReadToFile {
 				System.out.println(data);
 			}
 		} catch (FileNotFoundException e) {
-			System.out.println("khong tim thay file: " + e);
+			System.err.println("khong tim thay file: " + e);
 		} catch (IOException e) {
-			System.out.println("Loi IO File: " + e);
+			System.err.println("Loi IO File: " + e);
 		}
 	}
 }
