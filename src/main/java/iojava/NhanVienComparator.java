@@ -18,13 +18,13 @@ public class NhanVienComparator implements Comparator<NhanVien> {
 		if (value != 0) {
 			return value;
 		}
-		
+
 		try {
 			value = o1.getTen().compareTo(o2.getTen());
 		} catch (NullPointerException e) {
-			System.out.println("Loi 1: "+e);
+			System.out.println("Loi 1: " + e);
 		}
-		
+
 		return value;
 	}
 }

@@ -4,25 +4,41 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class WriteToFile {
 	static Scanner sc = new Scanner(System.in);
+	private static List<NhanVien> list = new ArrayList<>();
+	private Scanner sc1;
 
-	public static void main(String args[]) throws FileNotFoundException {
+	public static void main(String[] name) throws FileNotFoundException {
 
-		int n;
+		System.out.println("----- Tao va ghi file (mac dinh luu o D:/)-----");
+		System.out.println("Nhap ten file muon tao: ");
+		String s = sc.nextLine();
+		OutputStream outputStream = new FileOutputStream("D:/"+s, false);
+		PrintWriter pw = new PrintWriter(outputStream);
+		WriteToFile w1 = new WriteToFile();
+		w1.inputNhanVien();
+		for (NhanVien nhanVien : list) {
+			pw.println(nhanVien.toString());
+		}
+		System.out.println("Xuat file thanh cong!");
+		pw.flush();
+		pw.close();
+	}
+
+	private void inputNhanVien() {
 		String maNV;
 		String tenNV;
 		int tuoiNV;
 		float luongNV;
-
-		OutputStream outputStream = new FileOutputStream("D:/nhanvien.txt", true);
-		PrintWriter pw = new PrintWriter(outputStream);
 		System.out.println("moi nhap so nhan vien can nhap vao: ");
-		n = sc.nextInt();
+		int n = sc.nextInt();
 		for (int i = 0; i < n; i++) {
-			Scanner sc1 = new Scanner(System.in);
+			sc1 = new Scanner(System.in);
 			NhanVien nv = new NhanVien();
 			System.out.println("Nhan vien thu " + (i + 1));
 			System.out.println("Ma nhan vien: ");
@@ -37,10 +53,7 @@ public class WriteToFile {
 			System.out.println("Luong nhan vien: ");
 			luongNV = sc1.nextFloat();
 			nv.setLuong(luongNV);
-			pw.println(nv.toString());
+			list.add(nv);
 		}
-		System.out.println("Xuat file thanh cong!");
-		pw.flush();
-		pw.close();
 	}
 }

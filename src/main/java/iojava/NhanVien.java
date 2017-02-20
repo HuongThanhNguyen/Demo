@@ -54,13 +54,13 @@ public class NhanVien implements Comparable<NhanVien> {
 	}
 
 	public int compareTo(NhanVien arg0) {
-		if(arg0.getTen()==null&&this.ten==null){
+		if (arg0.getTen() == null && this.ten == null) {
 			return 0;
 		}
-		if(arg0.getTen()==null){
+		if (arg0.getTen() == null) {
 			return 1;
 		}
-		if(this.ten==null){
+		if (this.ten == null) {
 			return -1;
 		}
 		try {
