@@ -15,10 +15,10 @@ public class WriteToFile {
 
 	public static void main(String[] name) throws FileNotFoundException {
 
-		System.out.println("----- Tao va ghi file (mac dinh luu o D:/)-----");
+		System.out.println("----- Tao va ghi file -----");
 		System.out.println("Nhap ten file muon tao: ");
 		String s = sc.nextLine();
-		OutputStream outputStream = new FileOutputStream("D:/"+s, false);
+		OutputStream outputStream = new FileOutputStream(s, false);
 		PrintWriter pw = new PrintWriter(outputStream);
 		WriteToFile w1 = new WriteToFile();
 		w1.inputNhanVien();

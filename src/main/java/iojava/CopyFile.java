@@ -15,13 +15,13 @@ public class CopyFile {
 
 	public static void main(String[] args) {
 		NhanVien nv=new NhanVien();
-		System.out.println("----- copy file (mac dinh luu o D:/)-----");
+		System.out.println("----- copy file -----");
 		System.out.println("Nhap ten file nguon: ");
 		String s1 = sc.nextLine();
 		System.out.println("Nhap ten file dich");
 		String s2 = sc.nextLine();
-		File file1 = new File("D:/"+s1);
-		File file2 = new File("D:/"+s2);
+		File file1 = new File(s1);
+		File file2 = new File(s2);
 
 		try {
 			FileReader fr = new FileReader(file1);

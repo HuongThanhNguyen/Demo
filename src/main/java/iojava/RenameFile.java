@@ -14,8 +14,8 @@ public class RenameFile {
 		String s1 = sc.nextLine();
 		System.out.println("Nhap ten file can doi: ");
 		String s2 = sc.nextLine();
-		File file = new File("D:/"+s1);
-		File file2 = new File("D:/"+s2);
+		File file = new File(s1);
+		File file2 = new File(s2);
 		if (file.exists() == false) {
 			System.err.println(file.getName() + " khong ton tai");
 		}

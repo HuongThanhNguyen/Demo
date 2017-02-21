@@ -13,10 +13,10 @@ public class ReadToFile {
 
 	public static void main(String[] args) {
 		try {
-			System.out.println("----- Doc file (mac dinh luu o D:/)-----");
+			System.out.println("----- Doc file-----");
 			System.out.println("Nhap ten file can doc");
 			String s = sc.nextLine();
-			File inputStream = new File("Desktop"+s);
+			File inputStream = new File(s);
 			FileReader fr = new FileReader(inputStream);
 			bf = new BufferedReader(fr);
 			String data;

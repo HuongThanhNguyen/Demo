@@ -7,10 +7,10 @@ public class DeleteFile {
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		System.out.println("----- Xoa File (mac dinh luu o D:/)-----");
+		System.out.println("----- Xoa File -----");
 		System.out.println("Nhap ten file can xoa: ");
 		String s = sc.nextLine();
-		File file = new File("D:/" + s);
+		File file = new File(s);
 		if (file.exists() == false) {
 			System.err.println(file.getName() + " khong ton tai");
 		} else {
