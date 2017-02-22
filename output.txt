@@ -1,0 +1,46 @@
+----------------------
+Vong 1 - Luot 1:
+----------------------
+Start vong 1: 11:45:53.766
+horse1 ve dich voi 26 buoc chay voi time: PT0.246S
+horse3 ve dich voi 22 buoc chay voi time: PT0.205S
+horse10 ve dich voi 39 buoc chay voi time: PT0.371S
+horse6 ve dich voi 45 buoc chay voi time: PT0.433S
+horse7 ve dich voi 78 buoc chay voi time: PT0.752S
+horse9 ve dich voi 101 buoc chay voi time: PT0.982S
+horse2 ve dich voi 145 buoc chay voi time: PT1.407S
+horse5 ve dich voi 172 buoc chay voi time: PT1.676S
+horse8 ve dich voi 178 buoc chay voi time: PT1.736S
+horse4 ve dich voi 181 buoc chay voi time: PT1.768S
+----------------------
+horse3 Chien thang voi 22 buoc chay voi time: PT0.205S
+----------------------
+Vong 1 - Luot 2:
+horse11 ve dich voi 3 buoc chay voi time: PT0.021S
+horse18 ve dich voi 5 buoc chay voi time: PT0.041S
+horse13 ve dich voi 42 buoc chay voi time: PT0.399S
+horse19 ve dich voi 42 buoc chay voi time: PT0.399S
+horse16 ve dich voi 45 buoc chay voi time: PT0.43S
+horse12 ve dich voi 64 buoc chay voi time: PT0.614S
+horse17 ve dich voi 142 buoc chay voi time: PT1.369S
+horse14 ve dich voi 145 buoc chay voi time: PT1.4S
+horse20 ve dich voi 162 buoc chay voi time: PT1.564S
+horse15 ve dich voi 278 buoc chay voi time: PT2.702S
+----------------------
+horse11 Chien thang voi 3 buoc chay voi time: PT0.021S
+----------------------
+Vong 1 - Luot 3:
+horse21 ve dich voi 255 buoc chay voi time: PT2.487S
+Finish vong 1: 11:46:00.832
+----------------------
+horse21 Chien thang voi 255 buoc chay voi time:PT2.487S
+----------------------
+Vong 2 - Luot 1:
+----------------------
+Start vong 2: 11:46:00.861
+horse21 ve dich voi 4 buoc chay voi time: PT0.031S
+horse3 ve dich voi 24 buoc chay voi time: PT0.223S
+horse11 ve dich voi 175 buoc chay voi time: PT1.677S
+Finish vong 2: 11:46:02.564
+----------------------
+horse21 Chien thang voi 4 buoc chay voi time:PT0.031S

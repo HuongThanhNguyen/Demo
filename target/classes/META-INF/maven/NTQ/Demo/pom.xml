@@ -3,6 +3,12 @@
   <groupId>NTQ</groupId>
   <artifactId>Demo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>Demojava</name>
+  <name>Demojava</name>    
+  <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
+  
   <description>source code demo</description>
 </project>
