@@ -5,12 +5,12 @@ import java.time.LocalTime;
 import java.util.Random;
 
 public class Horse extends Thread {
-	static final int tongS = 100;
+	private static final int LengtSuccess = 100;
 	private String nameHorse;
 	private LocalTime timeStartOneHorse, timeFinishOneHorse;
 	private int stepHorse = 0;
 	private Duration timeMarch;
-	OutputRace outputDataRaceHore=new OutputRace();
+	private static final int TimeSleepThread=500;
 
 	public Duration gettimeMarch() {
 		return timeMarch;
@@ -30,31 +30,35 @@ public class Horse extends Thread {
 
 	public void run() {
 		timeStartOneHorse = LocalTime.now();
-		int tong = 0;
+		int leghtStep = 0;
 		Random rd = new Random();
 		while (true) {
 			int i = rd.nextInt(10) + 1;
-			if (tong < tongS) {
+			if (leghtStep < LengtSuccess) {
 				stepHorse++;
-				tong += i;
-				if (tong > tongS) {
+				leghtStep += i;
+				if (leghtStep > LengtSuccess) {
 					stepHorse++;
-					tong -= tongS;
+					leghtStep -= LengtSuccess;
 				}
-				if (tong == tongS) {
+				if (leghtStep == LengtSuccess) {
 					timeFinishOneHorse = LocalTime.now();
 					timeMarch = Duration.between(timeStartOneHorse, timeFinishOneHorse);
-					String s = nameHorse + " ve dich voi " + stepHorse + " buoc chay" + " voi time: " + timeMarch.toMillis() + " millis";
-					System.out.println(s);
-					outputDataRaceHore.printlOutputFile(s);
+					printHorseFinish();
 					break;
 				}
 			}
 			try {
-				Thread.sleep(5);
+				Thread.sleep(TimeSleepThread);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 		}
+	}
+	
+	void printHorseFinish(){
+		String s = nameHorse + " ve dich voi " + stepHorse + " buoc chay" + " voi time: " + timeMarch.toMillis() + " millis";
+		System.out.println(s);
+		InputAndOutputFile.printlFileOutput(s);
 	}
 }

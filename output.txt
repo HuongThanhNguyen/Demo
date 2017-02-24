@@ -1,78 +1,87 @@
 ----------------------
 vong dau thu: 1
 -------------------------
-thoi gian bat dau vong 1: 14:36:07.366
------------------------
+thoi gian bat dau vong 1: 09:11:09.209
+----------------------
  tran dau thu 1:
 -----------------------
-horse10 ve dich voi 17 buoc chay voi time: 84 millis
-horse13 ve dich voi 34 buoc chay voi time: 166 millis
-horse17 ve dich voi 61 buoc chay voi time: 301 millis
-horse15 ve dich voi 63 buoc chay voi time: 306 millis
-horse14 ve dich voi 63 buoc chay voi time: 312 millis
-horse12 ve dich voi 113 buoc chay voi time: 561 millis
-horse11 ve dich voi 123 buoc chay voi time: 615 millis
-horse16 ve dich voi 177 buoc chay voi time: 888 millis
-horse1 ve dich voi 188 buoc chay voi time: 940 millis
+horse17 ve dich voi 18 buoc chay voi time: 8508 millis
+horse12 ve dich voi 33 buoc chay voi time: 15513 millis
+horse13 ve dich voi 35 buoc chay voi time: 16515 millis
+horse11 ve dich voi 38 buoc chay voi time: 18027 millis
+horse10 ve dich voi 58 buoc chay voi time: 27552 millis
+horse1 ve dich voi 61 buoc chay voi time: 29053 millis
+horse14 ve dich voi 77 buoc chay voi time: 36561 millis
+horse16 ve dich voi 81 buoc chay voi time: 38562 millis
+horse18 ve dich voi 162 buoc chay voi time: 76592 millis
+horse15 ve dich voi 229 buoc chay voi time: 108621 millis
 ----------------------------- 
-con ngua: horse10 chien thang tran dau 1 voi so buoc chay la: 17 voi thoi gian la: 84 millis
+con ngua: horse17 chien thang tran dau 1 voi so buoc chay la: 18 voi thoi gian la: 8508 millis
 --------------
+----------------------
+vong dau thu: 1
+-------------------------
  tran dau thu 2:
 -----------------------
-horse2 ve dich voi 32 buoc chay voi time: 166 millis
-horse21 ve dich voi 35 buoc chay voi time: 183 millis
-horse25 ve dich voi 50 buoc chay voi time: 259 millis
-horse23 ve dich voi 57 buoc chay voi time: 297 millis
-horse24 ve dich voi 60 buoc chay voi time: 313 millis
-horse18 ve dich voi 91 buoc chay voi time: 468 millis
-horse22 ve dich voi 96 buoc chay voi time: 494 millis
-Horse19 ve dich voi 114 buoc chay voi time: 586 millis
-horse20 ve dich voi 353 buoc chay voi time: 1784 millis
+horse21 ve dich voi 18 buoc chay voi time: 8509 millis
+horse20 ve dich voi 19 buoc chay voi time: 9009 millis
+Horse19 ve dich voi 19 buoc chay voi time: 9009 millis
+horse25 ve dich voi 32 buoc chay voi time: 15015 millis
+horse2 ve dich voi 72 buoc chay voi time: 34028 millis
+horse24 ve dich voi 93 buoc chay voi time: 44039 millis
+horse26 ve dich voi 185 buoc chay voi time: 88086 millis
+horse22 ve dich voi 230 buoc chay voi time: 109103 millis
+horse23 ve dich voi 362 buoc chay voi time: 171678 millis
 ----------------------------- 
-con ngua: horse2 chien thang tran dau 2 voi so buoc chay la: 32 voi thoi gian la: 166 millis
+con ngua: horse21 chien thang tran dau 2 voi so buoc chay la: 18 voi thoi gian la: 8509 millis
 --------------
+----------------------
+vong dau thu: 1
+-------------------------
  tran dau thu 3:
 -----------------------
-horse30 ve dich voi 14 buoc chay voi time: 67 millis
-horse26 ve dich voi 38 buoc chay voi time: 186 millis
-horse29 ve dich voi 40 buoc chay voi time: 196 millis
-horse31 ve dich voi 54 buoc chay voi time: 264 millis
-horse3 ve dich voi 57 buoc chay voi time: 282 millis
-horse33 ve dich voi 73 buoc chay voi time: 363 millis
-horse28 ve dich voi 93 buoc chay voi time: 465 millis
-horse32 ve dich voi 151 buoc chay voi time: 755 millis
-horse27 ve dich voi 157 buoc chay voi time: 788 millis
+horse28 ve dich voi 16 buoc chay voi time: 7504 millis
+horse30 ve dich voi 22 buoc chay voi time: 10506 millis
+horse27 ve dich voi 38 buoc chay voi time: 18013 millis
+horse29 ve dich voi 54 buoc chay voi time: 25519 millis
+horse3 ve dich voi 95 buoc chay voi time: 45040 millis
+horse34 ve dich voi 95 buoc chay voi time: 45039 millis
+horse32 ve dich voi 113 buoc chay voi time: 53544 millis
+horse33 ve dich voi 169 buoc chay voi time: 80070 millis
+horse31 ve dich voi 394 buoc chay voi time: 186665 millis
 ----------------------------- 
-con ngua: horse30 chien thang tran dau 3 voi so buoc chay la: 14 voi thoi gian la: 67 millis
+con ngua: horse28 chien thang tran dau 3 voi so buoc chay la: 16 voi thoi gian la: 7504 millis
 --------------
+----------------------
+vong dau thu: 1
+-------------------------
  tran dau thu 4:
 -----------------------
-horse35 ve dich voi 19 buoc chay voi time: 95 millis
-horse6 ve dich voi 20 buoc chay voi time: 102 millis
-horse5 ve dich voi 38 buoc chay voi time: 192 millis
-horse4 ve dich voi 40 buoc chay voi time: 202 millis
-horse8 ve dich voi 69 buoc chay voi time: 350 millis
-horse9 ve dich voi 72 buoc chay voi time: 364 millis
-horse34 ve dich voi 76 buoc chay voi time: 387 millis
-horse37 ve dich voi 116 buoc chay voi time: 591 millis
-horse36 ve dich voi 295 buoc chay voi time: 1487 millis
-horse7 ve dich voi 390 buoc chay voi time: 1968 millis
+horse37 ve dich voi 20 buoc chay voi time: 9508 millis
+horse8 ve dich voi 33 buoc chay voi time: 15511 millis
+horse6 ve dich voi 50 buoc chay voi time: 23518 millis
+horse35 ve dich voi 75 buoc chay voi time: 35528 millis
+horse5 ve dich voi 93 buoc chay voi time: 44038 millis
+horse7 ve dich voi 120 buoc chay voi time: 57051 millis
+horse9 ve dich voi 120 buoc chay voi time: 57051 millis
+horse4 ve dich voi 133 buoc chay voi time: 63058 millis
+horse36 ve dich voi 214 buoc chay voi time: 101588 millis
 ----------------------------- 
-con ngua: horse35 chien thang tran dau 4 voi so buoc chay la: 19 voi thoi gian la: 95 millis
+con ngua: horse37 chien thang tran dau 4 voi so buoc chay la: 20 voi thoi gian la: 9508 millis
 --------------
-thoi gian ket thuc vong 1: 14:36:12.982
+thoi gian ket thuc vong 1: 09:20:38.058
 ----------------------
 vong dau thu: 2
 -------------------------
-thoi gian bat dau vong 2: 14:36:12.994
+thoi gian bat dau vong 2: 09:20:38.075
 ----------------------
  tran dau thu 1:
 -----------------------
-horse30 ve dich voi 35 buoc chay voi time: 174 millis
-horse35 ve dich voi 71 buoc chay voi time: 354 millis
-horse10 ve dich voi 133 buoc chay voi time: 670 millis
-horse2 ve dich voi 291 buoc chay voi time: 1463 millis
+horse17 ve dich voi 94 buoc chay voi time: 44537 millis
+horse21 ve dich voi 97 buoc chay voi time: 46038 millis
+horse28 ve dich voi 137 buoc chay voi time: 65054 millis
+horse37 ve dich voi 173 buoc chay voi time: 82076 millis
 ----------------------------- 
-con ngua: horse30 chien thang tran dau 1 voi so buoc chay la: 35 voi thoi gian la: 174 millis
+con ngua: horse17 chien thang tran dau 1 voi so buoc chay la: 94 voi thoi gian la: 44537 millis
 --------------
-thoi gian ket thuc vong 2: 14:36:14.487
+thoi gian ket thuc vong 2: 09:22:00.189

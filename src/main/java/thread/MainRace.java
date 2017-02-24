@@ -8,12 +8,10 @@ package thread;
  * Con ngua thu xxx da ve dich voi yyy buoc chay.
  */
 public class MainRace {
-	public static void main(String args[]) {
-
-		OutputRace outputRace = new OutputRace();
-		Round round = new Round();
-
-		outputRace.createOutputFile();
-		round.proccessedOneRound();
+	public static void main(String args[]) {	
+		Round round=new Round();
+		InputAndOutputFile.createFileOutput();
+		
+		round.oneRound();
 	}
 }

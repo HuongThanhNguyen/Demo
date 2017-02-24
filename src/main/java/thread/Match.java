@@ -4,20 +4,20 @@ import java.time.Duration;
 import java.util.List;
 
 public class Match {
-	String nameHorseWin;
-	int stepHorseWin;
-	Duration TimeHorseWin;
+	private String nameHorseWin;
+	private int stepHorseWin;
+	private Duration TimeHorseWin;
 
 	public String getNameHorseWin() {
 		return nameHorseWin;
 	}
 
-	public void proccessedOneMatchHorse(int match, List<Horse> listHorseOneMatch) {
-		OutputRace ouputRace=new OutputRace();
-		
-		String s1 = " tran dau thu " + match + ":\n"+"-----------------------";
+	public void MatchHorse(int match, List<Horse> listHorseOneMatch) {
+
+		String s1 = " tran dau thu " + match + ":\n" + "-----------------------";
 		System.out.println(s1);
-		ouputRace.printlOutputFile(s1);
+		InputAndOutputFile.printlFileOutput(s1);
+
 		try {
 			for (Horse oneHorse : listHorseOneMatch) {
 
@@ -28,8 +28,13 @@ public class Match {
 			}
 		} catch (InterruptedException e) {
 			System.err.println("Error: " + e);
-			ouputRace.printlOutputFile("Error: " + e);
+			InputAndOutputFile.printlFileOutput("Error: " + e);
 		}
+		findHorseWin(match, listHorseOneMatch);
+		printHorseWin(match);
+	}
+
+	private void findHorseWin(int match, List<Horse> listHorseOneMatch) {
 		nameHorseWin = listHorseOneMatch.get(0).getNameHorse();
 		stepHorseWin = listHorseOneMatch.get(0).getStepHorse();
 		TimeHorseWin = listHorseOneMatch.get(0).gettimeMarch();
@@ -41,10 +46,14 @@ public class Match {
 				TimeHorseWin = onHorse.gettimeMarch();
 			}
 		}
-
-		String s2 = "----------------------------- \n" + "con ngua: " + nameHorseWin + " chien thang tran dau " + match
-				+ " voi so buoc chay la: " + stepHorseWin + " voi thoi gian la: " + TimeHorseWin.toMillis() + " millis\n--------------";
-		System.out.println(s2);
-		ouputRace.printlOutputFile(s2);
 	}
+
+	private void printHorseWin(int match) {
+		String s2 = "----------------------------- \n" + "con ngua: " + nameHorseWin + " chien thang tran dau " + match
+				+ " voi so buoc chay la: " + stepHorseWin + " voi thoi gian la: " + TimeHorseWin.toMillis()
+				+ " millis\n--------------";
+		System.out.println(s2);
+		InputAndOutputFile.printlFileOutput(s2);
+	}
+
 }
