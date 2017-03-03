@@ -59,7 +59,10 @@ public class InputAndOutputFile {
 		}
 	}
 
-
+	/**
+	 * 
+	 * @TODO: try this
+	 */
 	public static void printlFileOutput(String s) {
 		try {
 			OutputStream output = new FileOutputStream("output.txt", true);

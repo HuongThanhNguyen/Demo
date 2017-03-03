@@ -1,5 +1,8 @@
 package thread;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /*
  * lam bai toan dua ngua:
  * co 10 con ngua cung xuat phat cung luc
@@ -8,10 +11,10 @@ package thread;
  * Con ngua thu xxx da ve dich voi yyy buoc chay.
  */
 public class MainRace {
-	public static void main(String args[]) {	
+	public static void main(String args[]) {
+		
 		Round round=new Round();
 		InputAndOutputFile.createFileOutput();
-		
 		round.oneRound();
 	}
 }
