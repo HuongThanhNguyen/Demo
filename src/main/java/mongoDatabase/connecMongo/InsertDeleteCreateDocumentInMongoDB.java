@@ -20,7 +20,7 @@ public class InsertDeleteCreateDocumentInMongoDB {
 	private static final int AGE_YOUNG = 18;
 	private static final int AGE_OLD = 50;
 	private static MongoClient mongoClient = ConnecToMongoDB.getMongoClient();;
-	private static DB db = mongoClient.getDB(InsertDeleteCreateDocumentInMongoDB.DB_NAME);;
+	private static DB db = mongoClient.getDB(DB_NAME);
 	private static DBCollection dbcl = db.getCollection(COLLECTION_NAME);
 	private static DBCursor cursor;
 	private static BasicDBObject query1;
