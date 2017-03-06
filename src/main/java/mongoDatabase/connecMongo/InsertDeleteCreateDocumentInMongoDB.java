@@ -15,13 +15,13 @@ import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 
 public class InsertDeleteCreateDocumentInMongoDB {
-	public static final String DB_Name = "MyWorld";
-	private static final String Collection_Name = "user";
+	public static final String DB_NAME = "MyWorld";
+	private static final String COLLECTION_NAME = "user";
 	private static final int AGE_YOUNG = 18;
 	private static final int AGE_OLD = 50;
 	private static MongoClient mongoClient = ConnecToMongoDB.getMongoClient();;
-	private static DB db = mongoClient.getDB(InsertDeleteCreateDocumentInMongoDB.DB_Name);;
-	private static DBCollection dbcl = db.getCollection(Collection_Name);
+	private static DB db = mongoClient.getDB(InsertDeleteCreateDocumentInMongoDB.DB_NAME);;
+	private static DBCollection dbcl = db.getCollection(COLLECTION_NAME);
 	private static DBCursor cursor;
 	private static BasicDBObject query1;
 	private static BasicDBObject query2;

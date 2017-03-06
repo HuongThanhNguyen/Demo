@@ -5,7 +5,7 @@ import java.net.UnknownHostException;
 import mongoDatabase.connecMongo.InsertDeleteCreateDocumentInMongoDB;
 
 public class Die extends Thread {
-	private final int TimeSleep = 5;
+	private final int TIMESLEEP = 5;
 
 	public void run() {
 		try {
@@ -15,7 +15,7 @@ public class Die extends Thread {
 			e.printStackTrace();
 		}
 		try {
-			Thread.sleep(TimeSleep);
+			Thread.sleep(TIMESLEEP);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

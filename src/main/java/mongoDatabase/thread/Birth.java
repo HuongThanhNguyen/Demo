@@ -12,7 +12,7 @@ public class Birth extends Thread {
 	private ObjectId objectId;
 	private String userName;
 	private int age;
-	private final int TimeSleep = 5;
+	private final int TIMESLEEP = 5;
 	private final int MAX_RANDOM = 101;
 	private int flag;
 
@@ -40,7 +40,7 @@ public class Birth extends Thread {
 			System.out.println(objectId + ": " + userName + ": " + age);
 		}
 		try {
-			Thread.sleep(TimeSleep);
+			Thread.sleep(TIMESLEEP);
 		} catch (InterruptedException e) {
 			System.err.println(e);
 		}

@@ -17,13 +17,13 @@ import mongoDatabase.thread.Update;
  * */
 public class Main {
 
-	private static int max_Population = 5000;
+	private static final int MAX_POPULATION = 5000;
 	public static int max_Age_Current = 0;
 
 	public static void main(String args[]) throws UnknownHostException {
 		int m = 0;
 		int i = 0;
-		while (m < max_Population) {
+		while (m < MAX_POPULATION) {
 			Birth birth = new Birth();
 			birth.start();
 			try {
