@@ -19,7 +19,7 @@ public class Client {
     public static String sendRequest(String user, String pass){
         String result = " ";
         try{
-
+        
         StringBuilder postData = new StringBuilder();
         String userPass=user+"/"+pass+"/";
         String urlStr = "http://localhost:8888/" +userPass;
