@@ -6,11 +6,14 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.handler.AbstractHandler;
+import org.eclipse.jetty.server.session.Session;
 import org.json.simple.JSONObject;
 
 public abstract class Handler extends AbstractHandler {
@@ -32,7 +35,6 @@ public abstract class Handler extends AbstractHandler {
     
     public void handle(String target, Request baseRequest, HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
-    	System.out.println(request);
         baseRequest.setHandled( true );
         response.addHeader("Access-Control-Allow-Origin", "*");
         response.addHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE, HEAD");
@@ -49,6 +51,9 @@ public abstract class Handler extends AbstractHandler {
         if(validateParameter(target)){        	
             if(checkUserPass.equals("true")){
                 dataRespond = SUCCESS_RESPOND;
+                HttpSession session=request.getSession();
+               session.setMaxInactiveInterval(1200);       
+               System.out.println("Session: "+session+"; Timeout: "+session.getMaxInactiveInterval());
             }else {
 				dataRespond=ERROR_RESPOND;
 			}

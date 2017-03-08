@@ -71,6 +71,6 @@ public class Client {
     
     public static void main(String[] args) {
         //expected: Message Success
-        System.out.println(Client.login("thanh", "35235"));
+        System.out.println(Client.login("thanh", "12346"));
     }
 }
