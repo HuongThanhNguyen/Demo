@@ -1,12 +1,13 @@
-package jettyJava.sessionServer;
+package jettyJava.session;
 
 import java.time.LocalTime;
 
-public class SessionServer {
+public class Session {
 
 	private String user;
 	private String pass;
 	private LocalTime timeToLive;
+	private String token;
 
 	public String getUser() {
 		return user;
@@ -32,10 +33,19 @@ public class SessionServer {
 		return timeToLive;
 	}
 
-	public SessionServer(String user, String pass, LocalTime timeToLive) {
+	public String getToken() {
+		return token;
+	}
+
+	public void setToken(String token) {
+		this.token = token;
+	}
+
+	public Session(String user, String pass, LocalTime timeToLive,String token) {
 		super();
 		this.user = user;
 		this.pass = pass;
 		this.timeToLive = timeToLive;
+		this.token=token;
 	}
 }

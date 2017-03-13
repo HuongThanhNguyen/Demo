@@ -22,7 +22,7 @@ public class InsertUpdateDB {
 		dbCollection.insert(basicDBObject);
 	}
 
-	public static String checkUserPass(String user, String pass) {
+	public static boolean checkUserPass(String user, String pass) {
 		String userName = "";
 		BasicDBObject basicDBObject = new BasicDBObject().append("_id", pass);
 		DBCursor cursor = dbCollection.find(basicDBObject);
@@ -31,9 +31,9 @@ public class InsertUpdateDB {
 			System.out.println(userName);
 		}
 		if (userName.equals(user)) {
-			return "true";
+			return true;
 		} else {
-			return "false";
+			return false;
 		}
 	}
 }

@@ -16,12 +16,12 @@ import org.json.simple.JSONObject;
 
 
 public class Client {
-    public static String sendRequest(String user, String pass){
+    public static String sendRequest(String user, String pass,String api){
         String result = " ";
         try{
         
         StringBuilder postData = new StringBuilder();
-        String userPass=user+"/"+pass+"/";
+        String userPass=user+"/"+pass+"/"+api+"/";
         String urlStr = "http://localhost:8888/" +userPass;
         URL u = new URL( urlStr );
         HttpURLConnection conn = (HttpURLConnection) u.openConnection();
@@ -30,7 +30,7 @@ public class Client {
         conn.setDoOutput(true);
         conn.setRequestMethod( "POST" );
         //data to send
-        postData.append(user+"/"+pass);
+        postData.append(user+"/"+pass+"/"+api);
         String encodedData = postData.toString();
         System.out.println("send data " + encodedData);
         // send data by byte
@@ -60,17 +60,18 @@ public class Client {
         return result;
     }
     
-    public static String login(String user, String pass){
+    public static String login(String user, String pass,String api){
         String result = "";
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("user", user);
         jsonObject.put("pass", pass);
-        result = sendRequest(jsonObject.get("user").toString(), jsonObject.get("pass").toString());
+        jsonObject.put("api", api);
+        result = sendRequest(jsonObject.get("user").toString(), jsonObject.get("pass").toString(),jsonObject.get("api").toString());
         return result;
     }     
     
     public static void main(String[] args) {
         //expected: Message Success
-        System.out.println(Client.login("thanh", "12346"));
+        System.out.println(Client.login("thanh", "12346","edit"));
     }
 }
