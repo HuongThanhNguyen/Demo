@@ -16,7 +16,6 @@ public class CheckTimeToLive extends Thread {
 	public synchronized void deleteSession() {
 		
 		while (Server.sessiones.size() >= 0) {
-			System.out.println(Server.sessiones.size());
 			Set<String> nameUser = Server.sessiones.keySet();
 			for (String string : nameUser) {
 				localTime=LocalTime.now();
