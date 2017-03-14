@@ -15,13 +15,13 @@ public class CheckTimeToLive extends Thread {
 
 	public synchronized void deleteSession() {
 		
-		while (Server.sessiones.size() >= 0) {
-			Set<String> nameUser = Server.sessiones.keySet();
+		while (Server.sessions.size() >= 0) {
+			Set<String> nameUser = Server.sessions.keySet();
 			for (String string : nameUser) {
 				localTime=LocalTime.now();
-				timeConnect = Duration.between(Server.sessiones.get(string).getTimeToLive(), localTime);
+				timeConnect = Duration.between(Server.sessions.get(string).getTimeToLive(), localTime);
 				if (timeConnect.toMillis() >= 0) {
-					Server.sessiones.remove(string);
+					Server.sessions.remove(string);
 				}
 			}
 			try {
